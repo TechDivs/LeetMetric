@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: rgba(61, 59, 59, 0.341) 10px 10px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+}
+
+.userinput {
+    display: flex;
+    gap: 10px;
+}
+
+#search-btn {
+    background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);            
+    border-radius: 5px;
+    display: block;
+}
+
+#search-btn:hover {
+    background-position: right center; 
+    text-decoration: none;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.progress-item {
+    margin: 5px;
+}
+
+.circle {
+    border: 2px solid #007bff; /* Slightly darker border for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #00B4D8 calc(var(--percentage, 40%)),  /* Smooth transition color */
+        #ffffff 0%);
+    color: #333; /* Dark text for better contrast */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stats-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 10px;
+}
+
+.card {
+    background-color: #6C63FF;  /* Modern purple for the cards */
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff; /* White text for contrast */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px; /* Stronger shadow on hover */
+}
